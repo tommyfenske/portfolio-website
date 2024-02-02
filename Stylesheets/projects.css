@@ -1,0 +1,53 @@
+#projects-tab {
+    display: none;
+}
+
+#projects {
+    background-image: linear-gradient(#5FA8D3, #9ee493);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    column-gap: 50px;
+    border-radius: 25px;
+    margin: 25px;
+    padding: 50px;
+    width: 1300px;
+}
+
+.project img {
+    border-radius: 25px;
+    width: 400px
+}
+
+.project button {
+    font-family: 'Lalezar', system-ui;
+    color: #1e1e1e;
+    background-color: #ffffff;
+    font-size: 24px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px 15px;
+    transition: scale 0.5s;
+    transition: color 0.5s;
+}
+
+.project button:hover {
+    scale: 1.05;
+    color: #5FA8D3;
+}
+
+#projects .large-button {
+    background-color: #1e1e1e;
+    transition: scale 0.5s;
+}
+
+#projects .large-button:hover {
+    scale: 1.05;
+}
