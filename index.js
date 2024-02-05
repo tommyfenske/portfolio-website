@@ -1,4 +1,4 @@
-openTab("about-tab")
+openTab("games-tab")
 
 function hideAllTabs() {
     //hide content
@@ -17,4 +17,15 @@ function openTab(tabName) {
 
 function topFunction() {
     document.documentElement.scrollTop = 0;
-  }
+}
+
+function openDialog(dialogBox) {
+    topFunction()
+    let dialogEl = document.getElementById(dialogBox)
+    dialogEl.showModal()
+}
+
+function closeDialog(dialogBox) {
+    let dialogEl = document.getElementById(dialogBox)
+    dialogEl.close()
+}

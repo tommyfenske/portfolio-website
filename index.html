@@ -41,7 +41,7 @@
             </div>
 
             <div id="skills">
-                <h1 id="skills-title">My Skills</h1>
+                <h1 id="large-title">My Skills</h1>
                 <div id="skills-container">
 
                     <div class="gradient-border">
@@ -168,10 +168,67 @@
         <div class="tab-section" id="games-tab">
 
             <div id="games">
+
                 <div class="text-container">
-                    <h1>Under Maintenance</h1>
-                    <p>Come back later to check out the games I've made</p>
+                    <h1 id="large-title">My Games</h1>
+                    <h3>Click on a game for more information</h3>
                 </div>
+
+                <div id="games-container">
+
+                    <div class="game"><a onclick="openDialog('dialog-jetpack')">
+                        <div class="text-container">
+                            <h3>Jetpack Joyride Demake</h3>
+                        </div>
+                        <img src="Images/jetpackjoyride_2.png">
+
+                            <dialog id="dialog-jetpack">
+                                <form method="dialog"><button onclick="closeDialog('dialog-jetpack')">x</button></form>
+                                <h1>Jetpack Joyride Demake</h1>
+                                <h2>Engine: Pico-8<br>Language: Lua</h2>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SP5G6BmuTXQ?si=kjCG0irV3aydFM22&rel=0" title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <h2>
+                                    I remade the popular mobile game Jetpack Joyride inside the game engine, Pico-8. Pico-8 only allows 16 colors, 
+                                    4 sound channels, and 256 8x8 sprites, so I had to be efficient with code and sprites. This was my biggest project 
+                                    using Lua and Pico-8 so far. I stayed organized by keeping each object in a separate folder, but Pico-8 made it difficult to switch 
+                                    between folders quickly. I really improved my use of object oriented design to create the obstacles and particles with this project. My 
+                                    next goal is to improve my implementation of physics with player controllers to make my code more efficient. I didn't use vectors and physics
+                                    in the most efficient way, but I learned a lot and have ideas on how to improve it for my next game. I made all of the sprites and sound effects
+                                    within the engine as well.
+                                </h2>
+                            </dialog>
+
+                    </a></div>
+
+                    <div class="game"><a onclick="openDialog('dialog-dungeon')">
+                        <div class="text-container">
+                            <h3>Dungeon Game</h3>
+                        </div>
+                        <img src="Images/Dungeon Game/StartScreen.png">
+
+                            <dialog id="dialog-dungeon">
+                                <form method="dialog"><button onclick="closeDialog('dialog-dungeon')">x</button></form>
+                                <h1>Dungeon Game (Work In Progress)</h1>
+                                <h2>Engine: Godot</h2>
+                                <h2>
+                                    Untitled Dungeon Game is a Godot project that I am working on as I learn more about game dev and have the free time to
+                                    work on it. Right now it is really just the product of my experimentation with the Godot engine, 3D development, and 
+                                    shaders/world environments/lighting. I plan to eventually turn it into a first-person dungeon crawling game. I learned how
+                                    to code a 3D first person controller, implement UI over a 3D camera, link together multiple "scenes", and pause the game 
+                                    within Godot. I have implemented a heatlh and stamina system, attack animations, and a dash with invincibility to dodge 
+                                    attacks. The "enemy" is a billboard image of an eye, which I added scripting to, allowing it to pathfind to the player.
+                                </h2>
+                                <img class="game-img" src="Images/Dungeon Game/Idle.png">
+                                <img class="game-img" src="Images/Dungeon Game/Swing.png">
+                                <img class="game-img" src="Images/Dungeon Game/Eye.png">
+                                <img class="game-img" src="Images/Dungeon Game/Pause.png">
+                            </dialog>
+
+                    </a></div>
+
+                </div>
+
             </div>
 
         </div>
