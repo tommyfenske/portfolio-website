@@ -1,4 +1,4 @@
-openTab("games-tab")
+openTab("about-tab")
 
 function hideAllTabs() {
     //hide content
